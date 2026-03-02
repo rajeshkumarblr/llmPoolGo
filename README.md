@@ -33,8 +33,14 @@ This project provides a Go-native alternative to the [llmpool](https://github.co
    The `main.go` file is configured to look for images in `/home/rajesh/code/cpp/concurrency/llmpool/images`. Update `imgDir` in `main.go` if your images are located elsewhere.
 
 3. **Run the pipeline**:
+   Using the Makefile:
    ```bash
-   go run main.go
+   make run
+   ```
+   Or build and run:
+   ```bash
+   make build
+   ./llmPoolGo
    ```
 
 ## Architecture
