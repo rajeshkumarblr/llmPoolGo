@@ -95,8 +95,8 @@ func worker(id int, tasks <-chan Task, wg *sync.WaitGroup) {
 }
 
 func main() {
-	// Root images directory from the C++ project (absolute path)
-	imgDir := "/home/rajesh/code/cpp/concurrency/llmpool/images"
+	// Root images directory (local to this project)
+	imgDir := "images"
 
 	files, err := os.ReadDir(imgDir)
 	if err != nil {
